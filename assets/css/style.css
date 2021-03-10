@@ -1,0 +1,632 @@
+/********************************************************/
+/********************************************************/
+/********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/********************************************************/
+/********************************************************/
+/********************************************************/
+* 
+{
+	font-family: 'Shippori Mincho B1', serif;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+
+::-webkit-scrollbar 
+{
+	display: none;
+}
+
+html 
+{
+	height: 100%;
+
+	background: #040404;
+}
+
+body 
+{
+	margin: 0px;
+	padding: 0px;
+
+	height: 100%;
+
+	background: #040404;
+}
+
+/***************************/
+/********   MENU   *********/
+/***************************/
+
+.menu 
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	background: #000000;
+}
+
+.menu .col-center 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 90px;
+}
+
+/********************************************/
+
+.menu .col-left 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 450px;
+}
+
+.menu .col-left nav ul 
+{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.menu .col-left nav ul li 
+{
+	list-style: none;
+}
+
+.menu .col-left nav ul li a 
+{
+	padding: 15px;
+	font-size: 18px;
+	text-decoration: none;
+	color: rgb(209, 209, 209);
+	transition: 0.3s;
+}
+
+.menu .col-left nav ul li a:hover 
+{
+	color: white;
+}
+
+/********************************************/
+
+.menu .col-right 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 450px;
+}
+
+.menu .col-right nav ul 
+{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.menu .col-right nav ul li 
+{
+	list-style: none;
+}
+
+.menu .col-right nav ul li a 
+{
+	padding: 15px;
+
+	font-size: 18px;
+	text-decoration: none;
+	color: rgb(209, 209, 209);
+	transition: 0.3s;
+}
+
+.menu .col-right nav ul li a:hover 
+{
+	color: white;
+}
+
+/***************************/
+/********   MAIN   *********/
+/***************************/
+
+.container 
+{
+	height: 100%;
+
+	background: #040404;
+}
+
+.container_login 
+{
+	height: 100%;
+	display: flex;
+
+	background: #040404;
+}
+
+.hero 
+{
+	background-image: url('../../assets/img/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100wh;
+	height: 100vh;
+	display: flex;
+}
+
+.center-content 
+{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+h1,
+h3 
+{
+	color: white;
+	line-height: 1;
+}
+
+h1 
+{
+    font-stretch: extra-expanded;
+	text-transform: uppercase;
+	font-size: 3em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+h3 
+{
+    margin-top: 9px;
+	margin-bottom: 40px;
+    
+    font-stretch: extra-expanded;
+
+	font-size: 1.5em;
+
+	text-align: center;
+}
+
+.button 
+{
+	text-transform: uppercase;
+	color: white;
+	padding: 20px;
+	border: 1px solid white;
+	text-decoration: none;
+	background: none;
+	transition: 0.3s;
+}
+
+.button:hover 
+{
+	margin-top: 1px;
+	border: 1px solid black;
+	background: white;
+	color: black;
+}
+
+/***   page login   ***/
+
+.login_form 
+{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-self: center;
+	margin: auto;
+
+	padding: 20px;
+
+	background: white;
+}
+
+.login_form .input 
+{
+	margin-bottom: 20px;
+	padding: 15px;
+	offset: none;
+	border: 1px solid rgba(0, 0, 0, 0.192);
+	background: rgba(0, 0, 0, 0.075);
+}
+
+/*************************************************************/
+/********************   PAGE REGISTER   **********************/
+/*************************************************************/
+
+.register_form 
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	background: white;
+}
+
+.register_form .input 
+{
+	margin-bottom: 20px;
+	padding: 15px;
+	offset: none;
+	border: 1px solid rgba(0, 0, 0, 0.192);
+	background: rgba(0, 0, 0, 0.075);
+}
+
+/*************************************************************/
+/**********************   PAGE PROFIL   **********************/
+/*************************************************************/
+
+.container_profil 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+
+	background: white;
+}
+
+.cards_profil 
+{
+	display: flex;
+    
+	flex-flow: column;
+
+	max-width: 400px;
+	height: 500px;
+
+	margin-left: 66px;
+	margin-top: 66px;
+	margin-right: 66px;
+	margin-bottom: 66px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	border: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+.cards_profil .pic 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+}
+
+.cards_profil .pic img 
+{
+	width: 95px;
+	height: 95px;
+
+	border-radius: 50%;
+}
+
+.cards_profil .title 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+	flex-grow: 1;
+}
+
+.cards_profil .title h2 
+{
+	text-align: center;
+	font-size: 23px;
+}
+
+.cards_profil .p 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+}
+
+.cards_profil .p p 
+{
+	text-align: center;
+	font-size: 16px;
+}
+
+.cards_profil .box_footer 
+{
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.cards_profil .box_footer p 
+{
+    justify-self: flex-end;
+    text-align: end;
+
+	color: black;
+	font-weight: bold;
+}
+
+/*************************************************************/
+/************************   PAGE PARC   **********************/
+/*************************************************************/
+
+.container_parc
+{
+    margin-left: 120px;
+    margin-right: 120px;
+
+    padding-left: 120px;
+    padding-right: 120px;
+    background: white;
+    height: 100%;
+}
+
+.title_parc
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.model_title
+{
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.models_selection
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.models_selection button
+{
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(34, 34, 34, 0.493);
+
+    transition: 0.3s;
+}
+
+.models_selection button:hover
+{
+    background:rgba(0, 0, 0, 0.192)
+}
+
+.grid_parc
+{   
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    height: 100%;
+}
+
+.column_left
+{
+    max-width: 400px;
+    height: 100%;
+}
+
+.column_left section
+{
+    border-right: 2px solid rgba(34, 34, 34, 0.11);
+}
+
+.column_left ul
+{
+    margin: 0px;
+
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(34, 34, 34, 0.11);
+}
+
+.column_left li
+{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+    list-style: none;
+}
+
+.column_left li svg
+{
+	width: 40px;
+	height: 40px;
+}
+
+.column_left li span
+{
+	padding-left: 10px;
+}
+.column_left li button
+{
+	padding: 0px;
+	border: none;
+	outline-style:none;
+	box-shadow: none;
+
+	font-weight: bold;
+	font-size: 15px;
+
+	color:rgba(0, 0, 0, 0.521);
+	background: none;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+}
+
+.column_left li button:hover
+{
+	color: black;
+}
+
+.column_right
+{
+    margin: 15px;
+    width: 1100px;
+    height: 100%;
+}
+
+.cards_group 
+{
+	display: flex;
+	align-items: flex-start;
+	justify-content: stretch;
+	flex-flow: row wrap;
+
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+
+}
+
+.cards_car
+{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	flex-grow: 2;
+	background: red;
+}
+
+/****** CARDS CARS  / home *********/
+
+.container-cards 
+{
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	background: #040404;
+}
+
+.branding-title 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+	width: 100%;
+}
+
+.branding-title h2 
+{
+	color: white;
+}
+
+.cards-groups 
+{
+	display: flex;
+	align-items: flex-start;
+	justify-content: stretch;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+
+	transition: 0.3s;
+	background: #333333;
+}
+
+.cards-groups:hover 
+{
+	padding-bottom: 10px;
+	background: rgba(0, 0, 0, 0.192);
+}
+
+.cards 
+{
+	width: 280px;
+}
+
+.cards ul 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.cards ul li 
+{
+	list-style: none;
+	color: white;
+}
+
+.cards a 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100px;
+	margin-top: 20px;
+	padding: 10px;
+
+	transition: 0.2s;
+	text-decoration: none;
+	background: #404040;
+	color: white;
+}
+
+.cards a:hover 
+{
+	background: rgba(255, 255, 255, 0.87);
+	color: black;
+}
+
+.cards-pic 
+{
+	flex-grow: 1;
+}
+
+.cards-pic img 
+{}
+
+/***************************/
+/******   FOOTER   *********/
+/***************************/
+
+footer 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+
+	background: #000000;
+	color: white;
+}
+
+footer .link 
+{
+	padding: 16px;
+}
